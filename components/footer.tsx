@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/language-context"
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589101919095", label: "Facebook" },
-  { icon: Instagram, href: "https://www.instagram.com/azhaarlight_foundation", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram" },
   { icon: Twitter, href: "https://x.com/azhaarlight", label: "Twitter/X" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/azhaarlight-foundation", label: "LinkedIn" },
   { icon: Youtube, href: "https://www.youtube.com/@azhaarlight", label: "YouTube" },
