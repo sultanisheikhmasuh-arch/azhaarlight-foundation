@@ -16,7 +16,7 @@ const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram" },
   { icon: Twitter, href: "https://x.com/azhaarlight", label: "Twitter/X" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/azhaarlight-foundation", label: "LinkedIn" },
-  { icon: Youtube, href: "https://www.youtube.com/@azhaarlight", label: "YouTube" },
+  { icon: Youtube, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube" },
   { icon: TikTokIcon, href: "https://www.tiktok.com/@azhaarlight", label: "TikTok" },
 ]
 
