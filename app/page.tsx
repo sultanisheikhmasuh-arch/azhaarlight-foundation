@@ -1,12 +1,16 @@
 import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
+import { Mission } from "@/components/mission"
+import { Vision } from "@/components/vision"
+import { Values } from "@/components/values"
 import { Footer } from "@/components/footer"
 
-export default function Home() {
+export default function MissionPage() {
   return (
     <main className="min-h-screen">
       <Header />
-      <Hero />
+      <Mission />
+      <Vision />
+      <Values />
       <Footer />
     </main>
   )
