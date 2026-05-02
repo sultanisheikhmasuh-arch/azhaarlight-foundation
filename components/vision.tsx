@@ -1,57 +1,107 @@
 "use client"
 
-import { TrendingUp, Users, School, Home } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 export function Vision() {
   const { t } = useLanguage()
 
-  const goals = [
+  const objectives = [
     {
-      icon: Users,
-      stat: t.vision.stat1Value,
-      label: t.vision.stat1Label,
+      emoji: "📊",
+      title: t.vision.obj1Title,
+      items: [t.vision.obj1a, t.vision.obj1b, t.vision.obj1c, t.vision.obj1d],
     },
     {
-      icon: School,
-      stat: t.vision.stat2Value,
-      label: t.vision.stat2Label,
+      emoji: "🏗️",
+      title: t.vision.obj2Title,
+      items: [t.vision.obj2a, t.vision.obj2b, t.vision.obj2c, t.vision.obj2d],
     },
     {
-      icon: Home,
-      stat: t.vision.stat3Value,
-      label: t.vision.stat3Label,
+      emoji: "💪",
+      title: t.vision.obj3Title,
+      items: [t.vision.obj3a, t.vision.obj3b, t.vision.obj3c, t.vision.obj3d],
     },
     {
-      icon: TrendingUp,
-      stat: t.vision.stat4Value,
-      label: t.vision.stat4Label,
+      emoji: "🤝",
+      title: t.vision.obj4Title,
+      items: [t.vision.obj4a, t.vision.obj4b, t.vision.obj4c, t.vision.obj4d],
     },
   ]
 
+  const dreams = [
+    t.vision.dream1,
+    t.vision.dream2,
+    t.vision.dream3,
+    t.vision.dream4,
+    t.vision.dream5,
+  ]
+
   return (
-    <section id="vision" className="py-16 lg:py-24 bg-secondary text-secondary-foreground">
+    <section id="vision" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
+
+        {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
+          <span className="text-primary font-semibold uppercase tracking-widest text-sm mb-3 block">
+            {t.vision.sectionLabel}
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
             {t.vision.title}
           </h2>
-          <p className="text-lg opacity-90 leading-relaxed">
+          <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
+          <p className="text-lg text-muted-foreground leading-relaxed">
             {t.vision.subtitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          {goals.map((goal, index) => (
-            <div key={index} className="text-center">
-              <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                <goal.icon className="h-7 w-7 text-secondary-foreground" />
+        {/* Strategic Objectives */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <h3 className="font-serif text-2xl font-bold text-foreground mb-8 text-center">
+            {t.vision.objTitle}
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {objectives.map((obj, index) => (
+              <div key={index} className="bg-card rounded-2xl p-6 border border-border hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-2xl">{obj.emoji}</span>
+                  <h4 className="font-serif font-bold text-foreground">{obj.title}</h4>
+                </div>
+                <ul className="space-y-2">
+                  {obj.items.filter(item => item !== "").map((item, i) => (
+                    <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="text-3xl md:text-4xl font-bold mb-1">{goal.stat}</div>
-              <div className="text-sm opacity-80">{goal.label}</div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        {/* Long Term Vision Quote */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="bg-primary/5 rounded-2xl p-8 border border-primary/20 text-center">
+            <h3 className="font-serif text-xl font-bold text-foreground mb-6">
+              {t.vision.longTermTitle}
+            </h3>
+            <p className="text-lg text-foreground font-serif italic leading-relaxed border-l-4 border-primary pl-6 text-left mb-8">
+              "{t.vision.quote}"
+            </p>
+            <h4 className="font-serif font-bold text-foreground mb-4 text-left">
+              {t.vision.dreamTitle}
+            </h4>
+            <ul className="space-y-3 text-left">
+              {dreams.map((dream, index) => (
+                <li key={index} className="flex items-start gap-3 text-muted-foreground">
+                  <span className="text-primary text-lg mt-0.5">✦</span>
+                  {dream}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
   )
