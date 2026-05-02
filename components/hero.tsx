@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Heart, BookOpen, Users, MapPin, Calendar, ArrowRight } from "lucide-react"
+import { Heart, Users, MapPin, Calendar, ArrowRight, Mail, Phone } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 export function Hero() {
@@ -14,17 +14,24 @@ export function Hero() {
     { value: "Burundi", label: t.hero.stat3, icon: MapPin },
   ]
 
+  const beneficiaries = [
+    { emoji: "👶", label: t.hero.ben1 },
+    { emoji: "👩", label: t.hero.ben2 },
+    { emoji: "👴", label: t.hero.ben3 },
+    { emoji: "🎓", label: t.hero.ben4 },
+    { emoji: "🏥", label: t.hero.ben5 },
+  ]
+
   return (
     <section id="accueil" className="relative">
+
       {/* Hero Banner */}
-      <div className="relative py-20 lg:py-32 bg-gradient-to-b from-card to-background">
+      <div className="relative py-20 lg:py-28 bg-gradient-to-b from-card to-background">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--primary)_1px,_transparent_1px)] bg-[size:24px_24px]" />
         </div>
-
         <div className="container mx-auto px-4 lg:px-8 relative">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-            {/* Logo */}
             <div className="mb-8">
               <Image
                 src="/images/azhaarlight-logo.jpg"
@@ -35,38 +42,21 @@ export function Hero() {
                 priority
               />
             </div>
-
-            {/* Main Title */}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-              AzhaarLight Foundation
+              🌍 AzhaarLight Foundation
             </h1>
-
-            {/* Tagline */}
             <p className="text-xl md:text-2xl text-primary font-serif italic mb-6">
               {`"${t.hero.tagline}"`}
             </p>
-
-            {/* Description */}
-            <p className="text-lg text-muted-foreground mb-10 max-w-2xl">
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
               {t.hero.description}
             </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-16">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg"
-              >
+            <div className="flex flex-col sm:flex-row gap-4 mb-6">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
                 <Heart className="mr-2 h-5 w-5" />
                 {t.hero.donate}
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-semibold px-8 py-6 text-lg"
-                onClick={() => document.getElementById('apropos')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                <BookOpen className="mr-2 h-5 w-5" />
+              <Button variant="outline" size="lg" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-semibold px-8 py-6 text-lg">
                 {t.hero.learnMore}
               </Button>
             </div>
@@ -91,62 +81,74 @@ export function Hero() {
 
       {/* Welcome Section */}
       <div className="py-16 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <span className="text-primary font-semibold uppercase tracking-widest text-sm mb-3 block">
-                {t.hero.welcomeLabel}
-              </span>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-                {t.hero.welcomeTitle}
-              </h2>
-              <div className="w-16 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                {t.hero.welcomeDesc}
-              </p>
+        <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
+
+          {/* Description */}
+          <div className="bg-card rounded-2xl p-8 border border-border mb-8 shadow-sm">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+              {t.hero.welcomeDesc}
+            </p>
+          </div>
+
+          {/* Beneficiaries */}
+          <div className="mb-8">
+            <h2 className="font-serif text-2xl font-bold text-foreground mb-6 text-center">
+              {t.hero.benTitle}
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              {beneficiaries.map((ben, index) => (
+                <div key={index} className="bg-card rounded-xl p-4 text-center border border-border hover:shadow-md transition-shadow">
+                  <p className="text-3xl mb-2">{ben.emoji}</p>
+                  <p className="text-sm text-muted-foreground font-medium">{ben.label}</p>
+                </div>
+              ))}
             </div>
+          </div>
 
-            {/* Action Cards */}
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-card rounded-2xl p-6 border border-border hover:shadow-md transition-shadow text-center">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="font-serif text-lg font-bold text-foreground mb-2">{t.hero.card1Title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{t.hero.card1Desc}</p>
-                <Button size="sm" className="bg-primary text-primary-foreground w-full">
-                  {t.hero.card1Button} <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+          {/* Vision */}
+          <div className="bg-primary/5 rounded-2xl p-8 border border-primary/20 mb-8 text-center">
+            <p className="text-2xl mb-3">💡</p>
+            <h3 className="font-serif text-xl font-bold text-foreground mb-3">{t.hero.visionTitle}</h3>
+            <p className="text-muted-foreground leading-relaxed">{t.hero.visionDesc}</p>
+          </div>
+
+          {/* Join Us */}
+          <div className="bg-card rounded-2xl p-8 border border-border mb-8 text-center">
+            <p className="text-2xl mb-3">🤝</p>
+            <h3 className="font-serif text-xl font-bold text-foreground mb-3">{t.hero.joinTitle}</h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">{t.hero.joinDesc}</p>
+            <Button size="lg" className="bg-primary text-primary-foreground">
+              <Heart className="mr-2 h-5 w-5" />
+              {t.hero.donate} <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+
+          {/* Contact Info */}
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="bg-card rounded-xl p-6 border border-border flex items-center gap-4">
+              <Mail className="h-8 w-8 text-primary flex-shrink-0" />
+              <div>
+                <p className="text-sm text-muted-foreground">📩 Email</p>
+                <p className="font-medium text-foreground">sultanisheikhmasuh@gmail.com</p>
               </div>
-
-              <div className="bg-card rounded-2xl p-6 border border-border hover:shadow-md transition-shadow text-center">
-                <div className="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-7 w-7 text-secondary" />
-                </div>
-                <h3 className="font-serif text-lg font-bold text-foreground mb-2">{t.hero.card2Title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{t.hero.card2Desc}</p>
-                <Button size="sm" variant="outline" className="border-secondary text-secondary w-full">
-                  {t.hero.card2Button} <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-
-              <div className="bg-card rounded-2xl p-6 border border-border hover:shadow-md transition-shadow text-center">
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BookOpen className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="font-serif text-lg font-bold text-foreground mb-2">{t.hero.card3Title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{t.hero.card3Desc}</p>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="border-primary text-primary w-full"
-                  onClick={() => document.getElementById('apropos')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  {t.hero.card3Button} <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+            </div>
+            <div className="bg-card rounded-xl p-6 border border-border flex items-center gap-4">
+              <Phone className="h-8 w-8 text-primary flex-shrink-0" />
+              <div>
+                <p className="text-sm text-muted-foreground">📞 WhatsApp</p>
+                <p className="font-medium text-foreground">+32 470 90 46 20</p>
               </div>
             </div>
           </div>
+
+          {/* Slogan */}
+          <div className="text-center">
+            <p className="font-serif text-xl font-bold text-primary italic">
+              ✨ "{t.footer.tagline}"
+            </p>
+            <p className="text-muted-foreground mt-2">{t.hero.sloganSub}</p>
+          </div>
+
         </div>
       </div>
     </section>
