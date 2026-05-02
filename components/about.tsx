@@ -92,7 +92,7 @@ export function About() {
                     alt="Masumbuko Nt. HAMIM"
                     width={128}
                     height={128}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <p className="font-serif font-bold text-foreground">{t.about.founderName}</p>
@@ -145,3 +145,4 @@ export function About() {
     </section>
   )
 }
+
