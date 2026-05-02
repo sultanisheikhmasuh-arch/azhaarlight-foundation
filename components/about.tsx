@@ -86,8 +86,14 @@ export function About() {
           <div className="bg-background rounded-2xl p-8 shadow-sm border border-border">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-shrink-0 text-center">
-                <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Award className="h-12 w-12 text-primary" />
+                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-3 border-4 border-primary/20 shadow-md">
+                  <Image
+                    src="/image founder.png"
+                    alt="Masumbuko Nt. HAMIM"
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover object-top"
+                  />
                 </div>
                 <p className="font-serif font-bold text-foreground">{t.about.founderName}</p>
                 <p className="text-primary text-sm font-medium">{t.about.founderRole}</p>
