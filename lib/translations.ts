@@ -13,9 +13,24 @@ export const translations = {
     // Hero
     hero: {
       tagline: "Ensemble, nous nous élevons et changeons des vies",
-      description: "Une fondation humanitaire au service de toutes les personnes vulnérables",
+      description: "Une fondation humanitaire au service de toutes les personnes vulnérables, sans distinction de religion, d'origine ou de statut.",
       donate: "Faire un Don",
       learnMore: "En Savoir Plus",
+      stat1: "Personnes aidées",
+      stat2: "Année de création",
+      stat3: "Basée au Burundi",
+      welcomeLabel: "Bienvenue",
+      welcomeTitle: "Ensemble, Changeons des Vies",
+      welcomeDesc: "AzhaarLight Foundation est née d'une conviction profonde : chaque être humain mérite dignité, espoir et soutien. Depuis janvier 2025, nous œuvrons sans relâche au service des personnes vulnérables au Burundi et au-delà. Rejoignez notre mouvement et contribuez à transformer des vies.",
+      card1Title: "Faire un Don",
+      card1Desc: "Chaque contribution, grande ou petite, aide une personne vulnérable à se reconstruire.",
+      card1Button: "Donner Maintenant",
+      card2Title: "Devenir Bénévole",
+      card2Desc: "Partagez votre temps et vos compétences pour aider nos communautés.",
+      card2Button: "Rejoindre",
+      card3Title: "Notre Histoire",
+      card3Desc: "Découvrez qui nous sommes, notre mission et notre vision pour l'avenir.",
+      card3Button: "En Savoir Plus",
     },
     // About
     about: {
@@ -138,9 +153,24 @@ export const translations = {
     // Hero
     hero: {
       tagline: "Together, we rise and change lives",
-      description: "A humanitarian foundation serving all vulnerable people",
+      description: "A humanitarian foundation serving all vulnerable people, without distinction of religion, origin, or status.",
       donate: "Make a Donation",
       learnMore: "Learn More",
+      stat1: "People helped",
+      stat2: "Year of establishment",
+      stat3: "Based in Burundi",
+      welcomeLabel: "Welcome",
+      welcomeTitle: "Together, Let's Change Lives",
+      welcomeDesc: "AzhaarLight Foundation was born from a deep conviction: every human being deserves dignity, hope, and support. Since January 2025, we have been working tirelessly to serve vulnerable people in Burundi and beyond. Join our movement and help transform lives.",
+      card1Title: "Make a Donation",
+      card1Desc: "Every contribution, big or small, helps a vulnerable person rebuild their life.",
+      card1Button: "Donate Now",
+      card2Title: "Become a Volunteer",
+      card2Desc: "Share your time and skills to help our communities.",
+      card2Button: "Join Us",
+      card3Title: "Our Story",
+      card3Desc: "Discover who we are, our mission and our vision for the future.",
+      card3Button: "Learn More",
     },
     // About
     about: {
