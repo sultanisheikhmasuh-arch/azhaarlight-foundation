@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
+import { Facebook, Twitter, Instagram, Youtube } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 const TikTokIcon = () => (
@@ -15,7 +15,6 @@ const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589101919095", label: "Facebook" },
   { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram" },
   { icon: Twitter, href: "https://x.com/Azhaarlight", label: "Twitter/X" },
-  { icon: Linkedin, href: "https://www.linkedin.com/company/azhaarlight-foundation", label: "LinkedIn" },
   { icon: Youtube, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube" },
   { icon: TikTokIcon, href: "https://www.tiktok.com/@azhaarlight", label: "TikTok" },
 ]
