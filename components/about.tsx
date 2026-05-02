@@ -86,13 +86,14 @@ export function About() {
           <div className="bg-background rounded-2xl p-8 shadow-sm border border-border">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="flex-shrink-0 text-center">
-                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-3 border-4 border-primary/20 shadow-md">
+                <div className="w-40 h-40 rounded-full overflow-hidden mx-auto mb-3 border-4 border-primary/20 shadow-md">
                   <Image
                     src="/image founder.png"
                     alt="Masumbuko Nt. HAMIM"
-                    width={128}
-                    height={128}
-                    className="w-full h-full object-cover object-center"
+                    width={160}
+                    height={160}
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: "center 10%" }}
                   />
                 </div>
                 <p className="font-serif font-bold text-foreground">{t.about.founderName}</p>
@@ -145,4 +146,3 @@ export function About() {
     </section>
   )
 }
-
