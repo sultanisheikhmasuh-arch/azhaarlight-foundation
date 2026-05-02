@@ -88,7 +88,7 @@ export function About() {
               <div className="flex-shrink-0 text-center">
                 <div className="w-40 h-40 rounded-full overflow-hidden mx-auto mb-3 border-4 border-primary/20 shadow-md">
                   <Image
-                    src="/image founder.png"
+                    src="/images/founder.jpg"
                     alt="Masumbuko Nt. HAMIM"
                     width={160}
                     height={160}
