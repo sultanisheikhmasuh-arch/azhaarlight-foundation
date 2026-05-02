@@ -126,9 +126,9 @@ export const translations = {
       dom6d: "Séminaires sur la santé publique",
       dom7Title: "Projet Universitaire (Vision à Long Terme)",
       dom7a: "Création d'une université de référence au Burundi",
-      dom7b: "Enseignement des sciences modernes",
-      dom7c: "Études islamiques (Bachelor, Master, Doctorat)",
-      dom7d: "Centre d'excellence académique",
+      dom7b: "Enseignement supérieur des sciences modernes (Bachelor, Master, Doctorat)",
+      dom7c: "Centre d'excellence académique",
+      dom7d: "",
     },
     // Vision
     vision: {
@@ -325,9 +325,9 @@ export const translations = {
       dom6d: "Public health seminars",
       dom7Title: "University Project (Long-Term Vision)",
       dom7a: "Creation of a reference university in Burundi",
-      dom7b: "Teaching modern sciences",
-      dom7c: "Islamic studies (Bachelor, Master, Doctorate)",
-      dom7d: "Academic center of excellence",
+      dom7b: "Higher education in modern sciences (Bachelor, Master, Doctorate)",
+      dom7c: "Academic center of excellence",
+      dom7d: "",
     },
     // Vision
     vision: {
