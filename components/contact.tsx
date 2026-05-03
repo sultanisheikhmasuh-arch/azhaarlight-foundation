@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react"
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube, Twitter } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 
 const TikTokIcon = () => (
@@ -31,6 +31,7 @@ export function Contact() {
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589101919095", label: "Facebook", color: "bg-blue-500" },
     { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram", color: "bg-pink-500" },
+    { icon: Twitter, href: "https://x.com/Azhaarlight", label: "Twitter/X", color: "bg-sky-500" },
     { icon: Youtube, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube", color: "bg-red-500" },
     { icon: TikTokIcon, href: "https://www.tiktok.com/@azhaarlight", label: "TikTok", color: "bg-foreground" },
   ]
