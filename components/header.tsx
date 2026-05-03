@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/lib/language-context"
 
@@ -55,6 +55,14 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            {/* Search Icon */}
+            <Link
+              href="/recherche"
+              className="text-foreground/80 hover:text-primary transition-colors"
+              aria-label="Recherche"
+            >
+              <Search className="h-5 w-5" />
+            </Link>
             <Button
               variant="outline"
               size="sm"
@@ -66,13 +74,18 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 text-foreground"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="lg:hidden flex items-center gap-3">
+            <Link href="/recherche" className="text-foreground/80 hover:text-primary" aria-label="Recherche">
+              <Search className="h-5 w-5" />
+            </Link>
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
