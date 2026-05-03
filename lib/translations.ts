@@ -8,7 +8,7 @@ export const translations = {
       vision: "Vision 2050",
       values: "Valeurs",
       help: "Comment Aider",
-      reports: "Rapports", à but non lucratif fondée en janvier 2025 à Bujumbura, au Burundi.",
+      reports: "Rapports",
       donate: "Faire un Don",
       learnMore: "En Savoir Plus",
       stat1: "Personnes aidées",
