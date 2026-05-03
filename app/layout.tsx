@@ -1,7 +1,18 @@
-// app/layout.tsx
-// Remplacez votre export metadata existant par celui-ci :
+import type { Metadata } from "next"
+import type { ReactNode } from "react"
+import { LanguageProvider } from "@/lib/language-context"
+import { Playfair_Display, Inter } from "next/font/google"
+import "./globals.css"
 
-import type { Metadata } from "next";
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-serif",
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://azhaarlight-foundation-one.vercel.app"),
@@ -48,4 +59,16 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-};
+}
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+      <body className={inter.className}>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
+    </html>
+  )
+}
