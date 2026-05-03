@@ -32,7 +32,6 @@ export function Footer() {
     <footer className="bg-foreground text-background py-12 lg:py-16">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
@@ -50,7 +49,6 @@ export function Footer() {
               {t.footer.tagline}
             </p>
           </div>
-
           <div>
             <h3 className="font-serif font-semibold text-lg mb-4">{t.footer.quickLinks}</h3>
             <ul className="space-y-2">
@@ -66,7 +64,6 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
           <div>
             <h3 className="font-serif font-semibold text-lg mb-4">{t.footer.followUs}</h3>
             <div className="flex gap-4 flex-wrap">
@@ -84,9 +81,7 @@ export function Footer() {
               ))}
             </div>
           </div>
-
         </div>
-
         <div className="border-t border-background/20 mt-10 pt-6 text-center">
           <p className="text-background/60 text-sm">
             {new Date().getFullYear()} AzhaarLight Foundation. {t.footer.rights}
