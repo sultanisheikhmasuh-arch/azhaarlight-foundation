@@ -327,7 +327,7 @@ export const translations = {
       vision: "Vision 2050",
       values: "Values",
       help: "How to Help",
-      reports: "Reports", foundation founded in January 2025 in Bujumbura, Burundi.",
+      reports: "Reports",
       donate: "Make a Donation",
       learnMore: "Learn More",
       stat1: "People helped",
