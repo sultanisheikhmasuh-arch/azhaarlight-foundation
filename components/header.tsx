@@ -19,6 +19,7 @@ export function Header() {
     { label: t.nav.values, href: "/valeurs" },
     { label: t.nav.help, href: "/aider" },
     { label: t.nav.contact, href: "/contact" },
+    { label: t.nav.reports, href: "/rapports" },
   ]
 
   const toggleLanguage = () => {
