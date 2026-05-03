@@ -12,7 +12,7 @@ const TikTokIcon = () => (
 )
 
 const socialLinks = [
-  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589101919095", label: "Facebook" },
+  { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589285276789", label: "Facebook" },
   { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram" },
   { icon: Twitter, href: "https://x.com/Azhaarlight", label: "Twitter/X" },
   { icon: Youtube, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube" },
