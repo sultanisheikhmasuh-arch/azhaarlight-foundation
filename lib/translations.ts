@@ -330,6 +330,18 @@ export const translations = {
       transparencyTitle: "Notre Engagement de Transparence",
       transparencyDesc: "Nous nous engageons à publier nos rapports annuels et à rendre compte de l'utilisation de chaque don reçu. Pour toute demande d'information supplémentaire, n'hésitez pas à nous contacter.",
     },
+    // Search
+    search: {
+      sectionLabel: "Recherche",
+      title: "Rechercher sur le site",
+      subtitle: "Trouvez rapidement une page, une actualité ou une information.",
+      placeholder: "Tapez votre recherche...",
+      noResults: "Aucun résultat trouvé.",
+      resultsFound: "résultat(s) trouvé(s)",
+      pages: "Pages",
+      news: "Actualités",
+      hint: "Commencez à taper pour rechercher...",
+    },
     // Footer
     footer: {
       tagline: "Rising Together, Changing Lives",
@@ -670,6 +682,18 @@ export const translations = {
       type4Desc: "Visual documentation of our activities and testimonials from people we have helped.",
       transparencyTitle: "Our Transparency Commitment",
       transparencyDesc: "We are committed to publishing our annual reports and accounting for the use of every donation received. For any additional information requests, please do not hesitate to contact us.",
+    },
+    // Search
+    search: {
+      sectionLabel: "Search",
+      title: "Search the site",
+      subtitle: "Quickly find a page, news or information.",
+      placeholder: "Type your search...",
+      noResults: "No results found.",
+      resultsFound: "result(s) found",
+      pages: "Pages",
+      news: "News",
+      hint: "Start typing to search...",
     },
     // Footer
     footer: {
