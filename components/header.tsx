@@ -16,7 +16,7 @@ export function Header() {
     { label: t.nav.about, href: "/about" },
     { label: t.nav.mission, href: "/mission" },
     { label: t.nav.vision, href: "/vision" },
-    { label: t.nav.values, href: "/mission#valeurs" },
+    { label: t.nav.values, href: "/valeurs" },
     { label: t.nav.help, href: "/contact#aider" },
     { label: t.nav.contact, href: "/contact#contact" },
   ]
