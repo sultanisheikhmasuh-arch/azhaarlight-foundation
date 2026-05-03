@@ -1,5 +1,4 @@
 "use client"
-
 import Image from "next/image"
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Youtube } from "lucide-react"
@@ -14,7 +13,7 @@ const TikTokIcon = () => (
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589285276789", label: "Facebook" },
   { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram" },
-  { icon: Twitter, href: "https://x.com/Azhaarlight", label: "Twitter/X" },
+  { icon: Twitter, href: "https://x.com/azhaarlight", label: "Twitter/X" },
   { icon: Youtube, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube" },
   { icon: TikTokIcon, href: "https://www.tiktok.com/@azhaarlight", label: "TikTok" },
 ]
@@ -74,7 +73,7 @@ export function Footer() {
             <h3 className="font-serif font-semibold text-lg mb-4">{t.footer.followUs}</h3>
             <div className="flex gap-4 flex-wrap">
               {socialLinks.map((social) => (
-                <a
+                
                   key={social.label}
                   href={social.href}
                   target="_blank"
