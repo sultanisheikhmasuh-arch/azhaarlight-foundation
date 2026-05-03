@@ -60,7 +60,7 @@ export function Header() {
               className="ml-2 border-foreground/20 text-foreground/80"
               onClick={toggleLanguage}
             >
-              {locale === "fr" ? "EN" : "FR"}
+              {locale === "fr" ? "FR" : "EN"}
             </Button>
           </div>
 
@@ -94,7 +94,7 @@ export function Header() {
                 className="w-fit border-foreground/20 text-foreground/80 mt-2"
                 onClick={toggleLanguage}
               >
-                {locale === "fr" ? "EN" : "FR"}
+                {locale === "fr" ? "FR" : "EN"}
               </Button>
             </div>
           </div>
