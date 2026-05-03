@@ -55,3 +55,44 @@ export function Footer() {
             <h3 className="font-serif font-semibold text-lg mb-4">{t.footer.quickLinks}</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-background/70 hover:text-background transition-colors text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-serif font-semibold text-lg mb-4">{t.footer.followUs}</h3>
+            <div className="flex gap-4 flex-wrap">
+              {socialLinks.map((social) => (
+                
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors"
+                  aria-label={social.label}
+                >
+                  <social.icon className="h-5 w-5 text-background" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+        <div className="border-t border-background/20 mt-10 pt-6 text-center">
+          <p className="text-background/60 text-sm">
+            {new Date().getFullYear()} AzhaarLight Foundation. {t.footer.rights}
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
