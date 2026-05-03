@@ -68,14 +68,7 @@ export function Footer() {
             <h3 className="font-serif font-semibold text-lg mb-4">{t.footer.followUs}</h3>
             <div className="flex gap-4 flex-wrap">
               {socialLinks.map((social) => (
-                
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors"
-                  aria-label={social.label}
-                >
+                <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors" aria-label={social.label}>
                   <social.icon className="h-5 w-5 text-background" />
                 </a>
               ))}
