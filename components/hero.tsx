@@ -129,7 +129,7 @@ export function Hero() {
               <Mail className="h-8 w-8 text-primary flex-shrink-0" />
               <div>
                 <p className="text-sm text-muted-foreground">📩 Email</p>
-                <p className="font-medium text-foreground">sultanisheikhmasuh@gmail.com</p>
+                <p className="font-medium text-foreground">azhaarlight@outlook.com</p>
               </div>
             </div>
             <div className="bg-card rounded-xl p-6 border border-border flex items-center gap-4">
