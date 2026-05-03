@@ -91,7 +91,7 @@ export function HowToHelp() {
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
                 <div>
                   <p className="text-xs text-muted-foreground">📧 Email</p>
-                  <p className="font-medium text-sm">sultanisheikhmasuh@gmail.com</p>
+                  <p className="font-medium text-sm">azhaarlight@outlook.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 bg-background rounded-xl p-4 border border-border">
@@ -133,7 +133,7 @@ export function HowToHelp() {
                 </div>
               ))}
             </div>
-            <p className="text-sm text-muted-foreground">📧 {t.help.volContact} : <span className="font-medium text-foreground">sultanisheikhmasuh@gmail.com</span></p>
+            <p className="text-sm text-muted-foreground">📧 {t.help.volContact} : <span className="font-medium text-foreground">azhaarlight@outlook.com</span></p>
           </div>
 
           {/* Partenariats */}
@@ -152,7 +152,7 @@ export function HowToHelp() {
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-muted-foreground">📧 {t.help.partContact} : <span className="font-medium text-foreground">sultanisheikhmasuh@gmail.com</span></p>
+            <p className="text-sm text-muted-foreground">📧 {t.help.partContact} : <span className="font-medium text-foreground">azhaarlight@outlook.com</span></p>
           </div>
 
           {/* Diffuser la Mission */}
