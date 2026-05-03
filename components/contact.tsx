@@ -29,7 +29,7 @@ export function Contact() {
   ]
 
   const socialLinks = [
-    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589101919095", label: "Facebook", color: "bg-blue-500" },
+    { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589285276789", label: "Facebook", color: "bg-blue-500" },
     { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram", color: "bg-pink-500" },
     { icon: Twitter, href: "https://x.com/Azhaarlight", label: "Twitter/X", color: "bg-sky-500" },
     { icon: Youtube, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube", color: "bg-red-500" },
