@@ -1,5 +1,4 @@
 "use client"
-
 import { useLanguage } from "@/lib/language-context"
 import { Quote } from "lucide-react"
 
@@ -49,7 +48,6 @@ export function Testimonials() {
               : "The testimonials from our beneficiaries and donors are our greatest pride."}
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100 relative">
