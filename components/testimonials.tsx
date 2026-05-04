@@ -30,20 +30,21 @@ const testimonials = [
 ]
 
 export function Testimonials() {
-  const { language } = useLanguage()
+  const { locale } = useLanguage()
+  const isFr = locale === "fr"
 
   return (
     <section className="py-16 bg-emerald-50">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-emerald-600 font-semibold uppercase tracking-wide text-sm">
-            {language === "fr" ? "Témoignages" : "Testimonials"}
+            {isFr ? "Témoignages" : "Testimonials"}
           </span>
           <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-4">
-            {language === "fr" ? "Ce qu'ils disent de nous" : "What they say about us"}
+            {isFr ? "Ce qu'ils disent de nous" : "What they say about us"}
           </h2>
           <p className="text-gray-500">
-            {language === "fr"
+            {isFr
               ? "Les témoignages de nos bénéficiaires et donateurs sont notre plus grande fierté."
               : "The testimonials from our beneficiaries and donors are our greatest pride."}
           </p>
@@ -53,15 +54,15 @@ export function Testimonials() {
             <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-emerald-100 relative">
               <Quote className="w-8 h-8 text-emerald-200 absolute top-4 right-4" />
               <p className="text-gray-600 text-sm leading-relaxed mb-6 italic">
-                "{language === "fr" ? t.textFr : t.textEn}"
+                "{isFr ? t.textFr : t.textEn}"
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold text-sm">
-                  {(language === "fr" ? t.nameFr : t.nameEn)[0]}
+                  {(isFr ? t.nameFr : t.nameEn)[0]}
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 text-sm">{language === "fr" ? t.nameFr : t.nameEn}</p>
-                  <p className="text-gray-400 text-xs">{language === "fr" ? t.roleFr : t.roleEn}</p>
+                  <p className="font-semibold text-gray-900 text-sm">{isFr ? t.nameFr : t.nameEn}</p>
+                  <p className="text-gray-400 text-xs">{isFr ? t.roleFr : t.roleEn}</p>
                 </div>
               </div>
             </div>
