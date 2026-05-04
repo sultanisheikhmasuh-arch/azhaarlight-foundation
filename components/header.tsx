@@ -17,6 +17,7 @@ export function Header() {
     { label: t.nav.mission, href: "/mission" },
     { label: t.nav.vision, href: "/vision" },
     { label: t.nav.values, href: "/valeurs" },
+    { label: t.nav.news, href: "/actualites" },
     { label: t.nav.help, href: "/aider" },
     { label: t.nav.contact, href: "/contact" },
     { label: t.nav.reports, href: "/rapports" },
@@ -45,12 +46,12 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                className="text-xs font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap"
               >
                 {item.label}
               </Link>
@@ -61,12 +62,12 @@ export function Header() {
               className="text-foreground/80 hover:text-primary transition-colors"
               aria-label="Recherche"
             >
-              <Search className="h-5 w-5" />
+              <Search className="h-4 w-4" />
             </Link>
             <Button
               variant="outline"
               size="sm"
-              className="ml-2 border-foreground/20 text-foreground/80"
+              className="ml-1 border-foreground/20 text-foreground/80 text-xs px-2 py-1"
               onClick={toggleLanguage}
             >
               {locale === "fr" ? "FR" : "EN"}
