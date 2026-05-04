@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     "aide Burundi",
     "zakat sadaqah",
   ],
+  icons: {
+    icon: "/images/azhaarlight-logo.jpg",
+    apple: "/images/azhaarlight-logo.jpg",
+    shortcut: "/images/azhaarlight-logo.jpg",
+  },
   openGraph: {
     title: "AzhaarLight Foundation — Rising Together, Changing Lives",
     description:
