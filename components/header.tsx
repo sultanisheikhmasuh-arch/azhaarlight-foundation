@@ -64,14 +64,20 @@ export function Header() {
             >
               <Search className="h-4 w-4" />
             </Link>
-            <Button
-              variant="outline"
-              size="sm"
-              className="ml-1 border-foreground/20 text-foreground/80 text-xs px-2 py-1"
-              onClick={toggleLanguage}
-            >
-              {locale === "fr" ? "FR" : "EN"}
-            </Button>
+            <div className="ml-1 flex items-center border border-foreground/20 rounded-lg overflow-hidden text-xs">
+              <button
+                onClick={() => setLocale("fr")}
+                className={`px-2 py-1 font-medium transition-colors ${locale === "fr" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground"}`}
+              >
+                FR
+              </button>
+              <button
+                onClick={() => setLocale("en")}
+                className={`px-2 py-1 font-medium transition-colors ${locale === "en" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground"}`}
+              >
+                EN
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -109,7 +115,7 @@ export function Header() {
                 className="w-fit border-foreground/20 text-foreground/80 mt-2"
                 onClick={toggleLanguage}
               >
-                {locale === "fr" ? "FR" : "EN"}
+                {locale === "fr" ? "EN" : "FR"}
               </Button>
             </div>
           </div>
