@@ -8,6 +8,7 @@ export const translations = {
       vision: "Vision",
       values: "Valeurs",
       help: "Aider",
+      news: "Actualités",
       reports: "Rapports",
       donate: "Faire un Don",
       learnMore: "En Savoir Plus",
@@ -330,6 +331,12 @@ export const translations = {
       transparencyTitle: "Notre Engagement de Transparence",
       transparencyDesc: "Nous nous engageons à publier nos rapports annuels et à rendre compte de l'utilisation de chaque don reçu. Pour toute demande d'information supplémentaire, n'hésitez pas à nous contacter.",
     },
+    // Actualites
+    actualites: {
+      sectionLabel: "Actualités",
+      title: "Nos Actualités",
+      subtitle: "Suivez les dernières nouvelles et actions d'AzhaarLight Foundation.",
+    },
     // Search
     search: {
       sectionLabel: "Recherche",
@@ -361,6 +368,7 @@ export const translations = {
       vision: "Vision",
       values: "Values",
       help: "Help",
+      news: "News",
       reports: "Reports",
       donate: "Make a Donation",
       learnMore: "Learn More",
@@ -682,6 +690,18 @@ export const translations = {
       type4Desc: "Visual documentation of our activities and testimonials from people we have helped.",
       transparencyTitle: "Our Transparency Commitment",
       transparencyDesc: "We are committed to publishing our annual reports and accounting for the use of every donation received. For any additional information requests, please do not hesitate to contact us.",
+    },
+    // Actualites
+    actualites: {
+      sectionLabel: "Actualités",
+      title: "Nos Actualités",
+      subtitle: "Suivez les dernières nouvelles et actions d'AzhaarLight Foundation.",
+    },
+    // Actualites
+    actualites: {
+      sectionLabel: "News",
+      title: "Our News",
+      subtitle: "Follow the latest news and actions from AzhaarLight Foundation.",
     },
     // Search
     search: {
