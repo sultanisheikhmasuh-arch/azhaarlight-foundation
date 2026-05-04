@@ -1,6 +1,5 @@
 export const translations = {
   fr: {
-    // Navigation
     nav: {
       home: "Accueil",
       about: "À Propos",
@@ -10,6 +9,7 @@ export const translations = {
       help: "Aider",
       news: "Actualités",
       reports: "Rapports",
+      contact: "Contact",
       partners: "Partenaires",
       donate: "Faire un Don",
       donPage: "Faire un Don",
@@ -30,7 +30,6 @@ export const translations = {
       joinDesc: "Que vous soyez donateur, bénévole, partenaire ou simplement sensible à notre mission, vous avez le pouvoir de faire la différence.",
       sloganSub: "Ensemble, nous nous élevons et changeons des vies.",
     },
-    // Hero
     hero: {
       tagline: "Ensemble, nous nous élevons et changeons des vies",
       description: "AzhaarLight Foundation soutient les personnes vulnérables au Burundi et en Afrique de l'Est avec compassion, dignité et solidarité.",
@@ -52,7 +51,6 @@ export const translations = {
       joinDesc: "Que vous soyez donateur, bénévole, partenaire ou simplement sensible à notre mission, vous avez le pouvoir de faire la différence.",
       sloganSub: "Ensemble, nous nous élevons et changeons des vies.",
     },
-    // About
     about: {
       sectionLabel: "À Propos",
       title: "Qui Sommes-Nous ?",
@@ -78,7 +76,6 @@ export const translations = {
       journeyStat2: "Année de création",
       slogan: "Rising Together, Changing Lives — Ensemble, nous nous élevons et changeons des vies",
     },
-    // Mission
     mission: {
       sectionLabel: "Notre Mission",
       title: "Notre Mission",
@@ -150,7 +147,6 @@ export const translations = {
       dom7c: "Centre d'excellence académique",
       dom7d: "",
     },
-    // Vision
     vision: {
       sectionLabel: "Notre Vision",
       title: "Vision 2050",
@@ -185,7 +181,6 @@ export const translations = {
       dream4: "Aucun patient ne succombe faute de soins accessibles",
       dream5: "Chaque jeune dispose des outils pour réaliser pleinement son potentiel",
     },
-    // Values
     values: {
       sectionLabel: "Nos Valeurs",
       title: "Nos Valeurs Fondamentales",
@@ -228,7 +223,6 @@ export const translations = {
       val7d: "Complémentarité plutôt que compétition entre acteurs",
       val7e: "Co-construction des solutions avec les bénéficiaires",
     },
-    // How to Help
     help: {
       sectionLabel: "Comment Aider",
       title: "Ensemble, Changeons des Vies",
@@ -279,7 +273,6 @@ export const translations = {
       zakatTitle: "Zakat et Sadaqah",
       zakatDesc: "AzhaarLight Foundation est éligible pour recevoir votre Zakat et vos Sadaqah. Nous redistribuons 100% de ces dons aux personnes vulnérables éligibles selon les principes islamiques, avec une transparence totale.",
     },
-    // Contact
     contact: {
       sectionLabel: "Contact",
       title: "Contactez-Nous",
@@ -308,7 +301,6 @@ export const translations = {
       followUs: "Réseaux Sociaux",
       infoTitle: "Informations de Contact",
     },
-    // Reports
     reports: {
       sectionLabel: "Rapports & Transparence",
       title: "Nos Rapports",
@@ -333,14 +325,11 @@ export const translations = {
       transparencyTitle: "Notre Engagement de Transparence",
       transparencyDesc: "Nous nous engageons à publier nos rapports annuels et à rendre compte de l'utilisation de chaque don reçu. Pour toute demande d'information supplémentaire, n'hésitez pas à nous contacter.",
     },
-    // Actualites
     actualites: {
       sectionLabel: "Actualités",
       title: "Nos Actualités",
       subtitle: "Suivez les dernières nouvelles et actions d'AzhaarLight Foundation.",
     },
-
-    // Don
     don: {
       sectionLabel: "Faire un Don",
       title: "Soutenez Notre Mission",
@@ -362,7 +351,6 @@ export const translations = {
       impact2: "Fournitures scolaires pour un enfant",
       impact3: "Consultation médicale complète",
     },
-    // Privacy
     privacy: {
       title: "Politique de Confidentialité",
       lastUpdated: "Dernière mise à jour : Janvier 2025",
@@ -378,7 +366,6 @@ export const translations = {
       s5Content: "Notre site peut utiliser des cookies techniques essentiels au bon fonctionnement du site. Aucun cookie de tracking ou publicitaire n'est utilisé.",
       contact: "Pour toute question concernant cette politique, contactez-nous à :",
     },
-    // CGU
     cgu: {
       title: "Conditions Générales d'Utilisation",
       lastUpdated: "Dernière mise à jour : Janvier 2025",
@@ -394,7 +381,6 @@ export const translations = {
       s5Content: "Les présentes conditions sont régies par le droit burundais et belge. Tout litige sera soumis aux juridictions compétentes de Bujumbura.",
       contact: "Pour toute question, contactez-nous à :",
     },
-    // Partenaires
     partenaires: {
       sectionLabel: "Partenariats",
       title: "Nos Partenaires",
@@ -414,7 +400,6 @@ export const translations = {
       ctaDesc: "Vous partagez notre vision ? Contactez-nous pour discuter d'une collaboration.",
       ctaBtn: "Nous contacter",
     },
-    // Search
     search: {
       sectionLabel: "Recherche",
       title: "Rechercher sur le site",
@@ -426,7 +411,6 @@ export const translations = {
       news: "Actualités",
       hint: "Commencez à taper pour rechercher...",
     },
-    // Footer
     footer: {
       tagline: "Rising Together, Changing Lives",
       quickLinks: "Liens Rapides",
@@ -437,7 +421,6 @@ export const translations = {
     },
   },
   en: {
-    // Navigation
     nav: {
       home: "Home",
       about: "About",
@@ -447,6 +430,7 @@ export const translations = {
       help: "Help",
       news: "News",
       reports: "Reports",
+      contact: "Contact",
       partners: "Partners",
       donate: "Make a Donation",
       donPage: "Make a Donation",
@@ -467,7 +451,6 @@ export const translations = {
       joinDesc: "Whether you are a donor, volunteer, partner or simply sensitive to our mission, you have the power to make a difference.",
       sloganSub: "Together, we rise and change lives.",
     },
-    // Hero
     hero: {
       tagline: "Rising Together, Changing Lives",
       description: "AzhaarLight Foundation supports vulnerable people in Burundi and East Africa with compassion, dignity and solidarity.",
@@ -489,7 +472,6 @@ export const translations = {
       joinDesc: "Whether you are a donor, volunteer, partner or simply sensitive to our mission, you have the power to make a difference.",
       sloganSub: "Together, we rise and change lives.",
     },
-    // About
     about: {
       sectionLabel: "About Us",
       title: "Who Are We?",
@@ -515,7 +497,6 @@ export const translations = {
       journeyStat2: "Year of establishment",
       slogan: "Rising Together, Changing Lives",
     },
-    // Mission
     mission: {
       sectionLabel: "Our Mission",
       title: "Our Mission",
@@ -587,7 +568,6 @@ export const translations = {
       dom7c: "Academic center of excellence",
       dom7d: "",
     },
-    // Vision
     vision: {
       sectionLabel: "Our Vision",
       title: "Vision 2050",
@@ -622,7 +602,6 @@ export const translations = {
       dream4: "No patient succumbs for lack of accessible care",
       dream5: "Every young person has the tools to fully realize their potential",
     },
-    // Values
     values: {
       sectionLabel: "Our Values",
       title: "Our Core Values",
@@ -643,7 +622,7 @@ export const translations = {
       val4Title: "Human Dignity and Respect",
       val4a: "Absolute respect for the dignity of each beneficiary",
       val4b: "Strict confidentiality of personal information",
-      val4c: "Benevolent approach, without judgment or condescension",
+      val4c: "Benevolent approach, without judgment or condescendance",
       val4d: "Recognition of the strengths and potential of each individual",
       val4e: "Active listening and empathy in all our interventions",
       val5Title: "Sustainability and Empowerment",
@@ -665,7 +644,6 @@ export const translations = {
       val7d: "Complementarity rather than competition between actors",
       val7e: "Co-construction of solutions with beneficiaries",
     },
-    // How to Help
     help: {
       sectionLabel: "How to Help",
       title: "Together, Let's Change Lives",
@@ -716,7 +694,6 @@ export const translations = {
       zakatTitle: "Zakat and Sadaqah",
       zakatDesc: "AzhaarLight Foundation is eligible to receive your Zakat and Sadaqah. We redistribute 100% of these donations to eligible vulnerable people according to Islamic principles, with complete transparency.",
     },
-    // Contact
     contact: {
       sectionLabel: "Contact",
       title: "Contact Us",
@@ -745,7 +722,6 @@ export const translations = {
       followUs: "Social Media",
       infoTitle: "Contact Information",
     },
-    // Reports
     reports: {
       sectionLabel: "Reports & Transparency",
       title: "Our Reports",
@@ -770,20 +746,11 @@ export const translations = {
       transparencyTitle: "Our Transparency Commitment",
       transparencyDesc: "We are committed to publishing our annual reports and accounting for the use of every donation received. For any additional information requests, please do not hesitate to contact us.",
     },
-    // Actualites
-    actualites: {
-      sectionLabel: "Actualités",
-      title: "Nos Actualités",
-      subtitle: "Suivez les dernières nouvelles et actions d'AzhaarLight Foundation.",
-    },
-    // Actualites
     actualites: {
       sectionLabel: "News",
       title: "Our News",
       subtitle: "Follow the latest news and actions from AzhaarLight Foundation.",
     },
-
-    // Don
     don: {
       sectionLabel: "Make a Donation",
       title: "Support Our Mission",
@@ -805,7 +772,6 @@ export const translations = {
       impact2: "School supplies for a child",
       impact3: "Full medical consultation",
     },
-    // Privacy
     privacy: {
       title: "Privacy Policy",
       lastUpdated: "Last updated: January 2025",
@@ -821,7 +787,6 @@ export const translations = {
       s5Content: "Our site may use technical cookies essential to the proper functioning of the site. No tracking or advertising cookies are used.",
       contact: "For any questions regarding this policy, contact us at:",
     },
-    // CGU
     cgu: {
       title: "Terms of Use",
       lastUpdated: "Last updated: January 2025",
@@ -837,7 +802,6 @@ export const translations = {
       s5Content: "These terms are governed by Burundian and Belgian law. Any dispute will be submitted to the competent courts of Bujumbura.",
       contact: "For any questions, contact us at:",
     },
-    // Partenaires
     partenaires: {
       sectionLabel: "Partnerships",
       title: "Our Partners",
@@ -857,7 +821,6 @@ export const translations = {
       ctaDesc: "Do you share our vision? Contact us to discuss a collaboration.",
       ctaBtn: "Contact us",
     },
-    // Search
     search: {
       sectionLabel: "Search",
       title: "Search the site",
@@ -869,7 +832,6 @@ export const translations = {
       news: "News",
       hint: "Start typing to search...",
     },
-    // Footer
     footer: {
       tagline: "Rising Together, Changing Lives",
       quickLinks: "Quick Links",
