@@ -5,11 +5,11 @@ import { useLanguage } from "@/lib/language-context"
 import { Heart, CheckCircle } from "lucide-react"
 
 export function VolunteerForm() {
-  const { language } = useLanguage()
+  const { locale } = useLanguage()
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ name: "", email: "", phone: "", skills: "", message: "" })
 
-  const isFr = language === "fr"
+  const isFr = locale === "fr"
 
   const handleSubmit = (e: React.MouseEvent) => {
     e.preventDefault()
