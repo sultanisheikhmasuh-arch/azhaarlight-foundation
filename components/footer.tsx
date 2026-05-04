@@ -22,7 +22,9 @@ export function Footer() {
     { label: t.nav.values, href: "/valeurs" },
     { label: t.nav.help, href: "/aider" },
     { label: t.nav.reports, href: "/rapports" },
+    { label: t.nav.partners, href: "/partenaires" },
     { label: t.nav.contact, href: "/contact" },
+    { label: t.nav.donPage, href: "/don" },
   ]
 
   const socialLinks = [
@@ -108,10 +110,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-muted-foreground">
-          <p>© 2025 AzhaarLight Foundation. {t.footer.rights}</p>
+          <p>© 2025–2026 AzhaarLight Foundation. {t.footer.rights}</p>
           <div className="flex gap-4">
-            <Link href="/contact" className="hover:text-primary transition-colors">{t.footer.privacy}</Link>
-            <Link href="/contact" className="hover:text-primary transition-colors">{t.footer.terms}</Link>
+            <Link href="/confidentialite" className="hover:text-primary transition-colors">{t.footer.privacy}</Link>
+            <Link href="/cgu" className="hover:text-primary transition-colors">{t.footer.terms}</Link>
           </div>
         </div>
       </div>
