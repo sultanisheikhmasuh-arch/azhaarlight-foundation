@@ -30,11 +30,6 @@ export const metadata: Metadata = {
     "aide Burundi",
     "zakat sadaqah",
   ],
-  icons: {
-    icon: "/images/azhaarlight-logo.jpg",
-    apple: "/images/azhaarlight-logo.jpg",
-    shortcut: "/images/azhaarlight-logo.jpg",
-  },
   openGraph: {
     title: "AzhaarLight Foundation — Rising Together, Changing Lives",
     description:
@@ -66,9 +61,27 @@ export const metadata: Metadata = {
   },
 }
 
+const GA_ID = "G-WGW7H4EXNY"
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');
+            `,
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <LanguageProvider>
           {children}
