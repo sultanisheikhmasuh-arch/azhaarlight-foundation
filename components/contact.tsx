@@ -14,7 +14,8 @@ const TikTokIcon = () => (
 )
 
 export function Contact() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
+  const isFr = locale === "fr"
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
 
@@ -31,7 +32,7 @@ export function Contact() {
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61589285276789", label: "Facebook", color: "bg-blue-500" },
     { icon: Instagram, href: "https://www.instagram.com/azhaarlight", label: "Instagram", color: "bg-pink-500" },
-    { icon: Twitter, href: "https://x.com/Azhaarlight", label: "Twitter/X", color: "bg-sky-500" },
+    { icon: Twitter, href: "https://x.com/azhaarlight", label: "Twitter/X", color: "bg-sky-500" },
     { icon: Youtube, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube", color: "bg-red-500" },
     { icon: TikTokIcon, href: "https://www.tiktok.com/@azhaarlight", label: "TikTok", color: "bg-foreground" },
   ]
@@ -129,10 +130,30 @@ export function Contact() {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">📞 {t.contact.phoneLabel}</h3>
-                  <a href="tel:+32470904620" className="text-muted-foreground hover:text-primary transition-colors">+32 470 90 46 20</a>
-                  <p className="text-xs text-muted-foreground mt-1">WhatsApp {t.contact.available}</p>
+                <div className="space-y-3">
+                  <h3 className="font-semibold text-foreground">📞 {t.contact.phoneLabel}</h3>
+
+                  {/* Numéro Belgique */}
+                  <div>
+                    <p className="text-xs text-muted-foreground font-medium mb-1">
+                      🇧🇪 {isFr ? "Belgique (Europe)" : "Belgium (Europe)"}
+                    </p>
+                    <a href="tel:+32470904620" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                      +32 470 90 46 20
+                    </a>
+                    <p className="text-xs text-muted-foreground mt-1">WhatsApp {t.contact.available}</p>
+                  </div>
+
+                  {/* Numéro Burundi */}
+                  <div>
+                    <p className="text-xs text-muted-foreground font-medium mb-1">
+                      🇧🇮 {isFr ? "Burundi (Afrique de l'Est)" : "Burundi (East Africa)"}
+                    </p>
+                    <a href="tel:+25767914387" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                      +257 67 91 43 87
+                    </a>
+                    <p className="text-xs text-muted-foreground mt-1">WhatsApp {t.contact.available}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -145,7 +166,9 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">📧 {t.contact.emailLabel}</h3>
-                  <a href="mailto:azhaarlight@outlook.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">azhaarlight@outlook.com</a>
+                  <a href="mailto:azhaarlight@outlook.com" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                    azhaarlight@outlook.com
+                  </a>
                 </div>
               </div>
             </div>
