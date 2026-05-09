@@ -8,7 +8,7 @@ export function Don() {
   const d = t.don
   const isFr = locale === "fr"
 
-  const PAYPAL_LINK = "https://www.paypal.com/send?recipient=azhaarlight@outlook.com&currencyCode=EUR"
+ const PAYPAL_LINK = "https://www.paypal.me/azhaarlight"
 
   return (
     <section className="py-16 bg-gray-50 min-h-screen">
