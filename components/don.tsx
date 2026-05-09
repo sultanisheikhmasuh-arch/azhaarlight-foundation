@@ -8,6 +8,8 @@ export function Don() {
   const d = t.don
   const isFr = locale === "fr"
 
+  const PAYPAL_LINK = "https://www.paypal.com/send?recipient=azhaarlight@outlook.com&currencyCode=EUR"
+
   return (
     <section className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4">
@@ -31,14 +33,13 @@ export function Don() {
             </div>
           </div>
           <a
-            href="https://www.paypal.com/donate?business=azhaarlight%40outlook.com&currency_code=EUR&item_name=AzhaarLight+Foundation"
+            href={PAYPAL_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-blue-600 text-white font-semibold px-8 py-3 rounded-xl hover:bg-blue-700 transition-colors"
           >
             <Heart className="w-5 h-5" /> {d.donateNow}
           </a>
-          {/* Note PayPal */}
           <div className="flex items-start gap-2 mt-4 bg-blue-50 rounded-xl p-4">
             <Info className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
             <p className="text-blue-700 text-xs">
@@ -117,7 +118,7 @@ export function Don() {
           </div>
           <p className="text-emerald-100 mb-4">{d.zakatDesc}</p>
           <a
-            href="https://www.paypal.com/donate?business=azhaarlight%40outlook.com&currency_code=EUR&item_name=Zakat+AzhaarLight+Foundation"
+            href={PAYPAL_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-emerald-700 font-semibold px-6 py-2.5 rounded-xl hover:bg-emerald-50 transition-colors"
