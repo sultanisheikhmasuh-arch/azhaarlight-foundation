@@ -1,11 +1,12 @@
 "use client"
 
 import { useLanguage } from "@/lib/language-context"
-import { Heart, Building2, Smartphone, Star } from "lucide-react"
+import { Heart, Building2, Smartphone, Star, Info } from "lucide-react"
 
 export function Don() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
   const d = t.don
+  const isFr = locale === "fr"
 
   return (
     <section className="py-16 bg-gray-50 min-h-screen">
@@ -37,6 +38,15 @@ export function Don() {
           >
             <Heart className="w-5 h-5" /> {d.donateNow}
           </a>
+          {/* Note PayPal */}
+          <div className="flex items-start gap-2 mt-4 bg-blue-50 rounded-xl p-4">
+            <Info className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
+            <p className="text-blue-700 text-xs">
+              {isFr
+                ? "Vous pouvez également envoyer votre don directement à notre email PayPal : azhaarlight@outlook.com — rapide, sécurisé et sans frais supplémentaires."
+                : "You can also send your donation directly to our PayPal email: azhaarlight@outlook.com — fast, secure and no extra fees."}
+            </p>
+          </div>
         </div>
 
         {/* Virement bancaire */}
@@ -60,8 +70,12 @@ export function Don() {
               <span className="font-medium text-gray-900">azhaarlight@outlook.com</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">WhatsApp</span>
+              <span className="text-gray-500">WhatsApp 🇧🇪</span>
               <span className="font-medium text-gray-900">+32 470 90 46 20</span>
+            </div>
+            <div className="flex justify-between">
+              <span className="text-gray-500">WhatsApp 🇧🇮</span>
+              <span className="font-medium text-gray-900">+257 67 91 43 87</span>
             </div>
           </div>
           <p className="text-gray-400 text-xs mt-3">{d.bankContact}</p>
