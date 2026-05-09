@@ -56,9 +56,7 @@ export function Footer() {
               "{t.footer.tagline}"
             </p>
             <a
-              href="https://www.paypal.com/donate?business=azhaarlight%40outlook.com&currency_code=EUR&item_name=AzhaarLight+Foundation"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/don"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-primary/90 transition-colors"
             >
               ❤️ {t.nav.donate}
