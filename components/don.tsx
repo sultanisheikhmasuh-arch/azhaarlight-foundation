@@ -100,11 +100,11 @@ export function Don() {
             </div>
             <div className="flex justify-between">
               <span className="text-gray-500">{d.country}</span>
-              <span className="font-medium text-gray-900">Burundi</span>
+            <span className="font-medium text-gray-900">Belgique</span>
             </div>
             <div className="flex justify-between">
               <span className="text-gray-500">{d.city}</span>
-              <span className="font-medium text-gray-900">Bujumbura</span>
+             <span className="font-medium text-gray-900">Bruxelles</span>
             </div>
           </div>
           <p className="text-gray-400 text-xs mt-3">{d.wuContact}</p>
