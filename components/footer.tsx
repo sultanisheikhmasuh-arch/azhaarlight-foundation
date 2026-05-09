@@ -55,7 +55,6 @@ export function Footer() {
             <p className="text-muted-foreground text-sm italic mb-4">
               "{t.footer.tagline}"
             </p>
-            {/* Donate Button */}
             <a
               href="https://www.paypal.com/donate?business=azhaarlight%40outlook.com&currency_code=EUR&item_name=AzhaarLight+Foundation"
               target="_blank"
@@ -83,7 +82,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Social Media */}
+          {/* Social Media & Contact */}
           <div>
             <h3 className="font-semibold text-foreground mb-4">{t.footer.followUs}</h3>
             <div className="flex flex-wrap gap-3">
@@ -102,10 +101,12 @@ export function Footer() {
             </div>
             <div className="mt-6 space-y-1 text-sm text-muted-foreground">
               <p>📩 azhaarlight@outlook.com</p>
-              <p>📞 +32 470 90 46 20</p>
+              <p>📞 🇧🇪 +32 470 90 46 20</p>
+              <p>📞 🇧🇮 +257 67 91 43 87</p>
               <p>📍 Bujumbura, Burundi</p>
             </div>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
