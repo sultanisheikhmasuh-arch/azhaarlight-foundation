@@ -96,7 +96,7 @@ export function Don() {
           <div className="bg-gray-50 rounded-xl p-5 space-y-2 text-sm">
             <div className="flex justify-between">
               <span className="text-gray-500">{d.recipient}</span>
-              <span className="font-medium text-gray-900">Masumbuko Nt. HAMIM</span>
+             <span className="font-medium text-gray-900">Masumbuko Ntungwanayo</span>
             </div>
             <div className="flex justify-between">
               <span className="text-gray-500">{d.country}</span>
