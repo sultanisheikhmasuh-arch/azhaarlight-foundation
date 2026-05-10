@@ -24,28 +24,26 @@ export function Reports() {
     isFr ? "Audit interne semestriel de l'utilisation des fonds" : "Semi-annual internal audit of fund utilization",
   ]
 
-  ficielle avec partenaires" : "Official meeting const photos = [
-    { src: "/action-2025-1.jpg", caption: isFr ? "Travaux communautaires sur le terrain" : "Community work in the field" },
-    { src: "/action-2025-2.jpg", caption: isFr ? "Notre équipe de bénévoles" : "Our volunteer team" },
-    { src: "/action-2025-3.jpg", caption: isFr ? "Rassemblement communautaire" : "Community gathering" },
-    { src: "/action-2025-4.jpg", caption: isFr ? "Session de formation" : "Training session" },
-    { src: "/action-2025-5.jpg", caption: isFr ? "Réunion ofwith partners" },
-    { src: "/action-2025-6.jpg", caption: isFr ? "Remise d'accréditations" : "Credential distribution" },
-    { src: "/action-2025-7.jpg", caption: isFr ? "Réunion de coordination" : "Coordination meeting" },
+  const photos = [
+    { src: "/images/action-2025-1.jpg", caption: isFr ? "Travaux communautaires sur le terrain" : "Community work in the field" },
+    { src: "/images/action-2025-2.jpg", caption: isFr ? "Notre équipe de bénévoles" : "Our volunteer team" },
+    { src: "/images/action-2025-3.jpg", caption: isFr ? "Rassemblement communautaire" : "Community gathering" },
+    { src: "/images/action-2025-4.jpg", caption: isFr ? "Session de formation" : "Training session" },
+    { src: "/images/action-2025-5.jpg", caption: isFr ? "Réunion officielle avec partenaires" : "Official meeting with partners" },
+    { src: "/images/action-2025-6.jpg", caption: isFr ? "Remise d'accréditations" : "Credential distribution" },
+    { src: "/images/action-2025-7.jpg", caption: isFr ? "Réunion de coordination" : "Coordination meeting" },
   ]
 
   return (
     <section className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-4">
 
-        {/* Header */}
         <div className="text-center mb-12">
           <span className="text-emerald-600 font-semibold uppercase tracking-wide text-sm">{r.sectionLabel}</span>
           <h1 className="text-4xl font-bold text-gray-900 mt-2 mb-4">{r.title}</h1>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">{r.subtitle}</p>
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-3 gap-6 mb-12">
           <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100">
             <div className="text-3xl font-bold text-emerald-600">50+</div>
@@ -61,7 +59,6 @@ export function Reports() {
           </div>
         </div>
 
-        {/* Transparency Commitment Banner */}
         <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 mb-12">
           <div className="flex items-start gap-4">
             <div className="bg-emerald-100 p-3 rounded-full shrink-0">
@@ -83,7 +80,6 @@ export function Reports() {
           </div>
         </div>
 
-        {/* Budget Allocation */}
         <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">
             {isFr ? "Répartition des fonds — 2025" : "Fund allocation — 2025"}
@@ -112,7 +108,6 @@ export function Reports() {
           </p>
         </div>
 
-        {/* Annual Reports */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">{r.annualTitle}</h2>
           <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
@@ -161,7 +156,6 @@ export function Reports() {
           </div>
         </div>
 
-        {/* Photo Gallery */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">
             {isFr ? "Photos de terrain — 2025" : "Field photos — 2025"}
@@ -183,7 +177,6 @@ export function Reports() {
           </div>
         </div>
 
-        {/* Types of Reports */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">{r.typesTitle}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -204,7 +197,6 @@ export function Reports() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
         <div className="bg-emerald-700 rounded-xl p-8 text-white text-center">
           <Shield className="w-10 h-10 mx-auto mb-4 opacity-80" />
           <h2 className="text-2xl font-bold mb-3">{r.transparencyTitle}</h2>
