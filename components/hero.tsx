@@ -64,6 +64,22 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Hero Photo */}
+      <div className="relative w-full h-72 md:h-96 overflow-hidden">
+        <Image
+          src="/images/hero-photo.jpg"
+          alt="AzhaarLight Foundation - Education"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          <p className="text-white text-2xl md:text-4xl font-serif font-bold text-center px-4 drop-shadow-lg">
+            "Rising Together, Changing Lives"
+          </p>
+        </div>
+      </div>
+
       {/* Stats Bar */}
       <div className="bg-primary py-8">
         <div className="container mx-auto px-4 lg:px-8">
