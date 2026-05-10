@@ -9,36 +9,11 @@ export function Reports() {
   const isFr = locale === "fr"
 
   const budgetData = [
-    {
-      category: isFr ? "Aide alimentaire & nutrition" : "Food aid & nutrition",
-      percentage: 35,
-      color: "bg-emerald-500",
-      icon: <Heart className="w-4 h-4" />,
-    },
-    {
-      category: isFr ? "Éducation & bourses" : "Education & scholarships",
-      percentage: 25,
-      color: "bg-blue-500",
-      icon: <BookOpen className="w-4 h-4" />,
-    },
-    {
-      category: isFr ? "Santé & soins médicaux" : "Health & medical care",
-      percentage: 20,
-      color: "bg-purple-500",
-      icon: <Stethoscope className="w-4 h-4" />,
-    },
-    {
-      category: isFr ? "Logement & urgences" : "Housing & emergencies",
-      percentage: 15,
-      color: "bg-orange-500",
-      icon: <Home className="w-4 h-4" />,
-    },
-    {
-      category: isFr ? "Frais opérationnels" : "Operational costs",
-      percentage: 5,
-      color: "bg-gray-400",
-      icon: <Shield className="w-4 h-4" />,
-    },
+    { category: isFr ? "Aide alimentaire & nutrition" : "Food aid & nutrition", percentage: 35, color: "bg-emerald-500", icon: <Heart className="w-4 h-4" /> },
+    { category: isFr ? "Éducation & bourses" : "Education & scholarships", percentage: 25, color: "bg-blue-500", icon: <BookOpen className="w-4 h-4" /> },
+    { category: isFr ? "Santé & soins médicaux" : "Health & medical care", percentage: 20, color: "bg-purple-500", icon: <Stethoscope className="w-4 h-4" /> },
+    { category: isFr ? "Logement & urgences" : "Housing & emergencies", percentage: 15, color: "bg-orange-500", icon: <Home className="w-4 h-4" /> },
+    { category: isFr ? "Frais opérationnels" : "Operational costs", percentage: 5, color: "bg-gray-400", icon: <Shield className="w-4 h-4" /> },
   ]
 
   const commitments = [
@@ -57,7 +32,6 @@ export function Reports() {
     { src: "/action-2025-5.jpg", caption: isFr ? "Réunion officielle avec partenaires" : "Official meeting with partners" },
     { src: "/action-2025-6.jpg", caption: isFr ? "Remise d'accréditations" : "Credential distribution" },
     { src: "/action-2025-7.jpg", caption: isFr ? "Réunion de coordination" : "Coordination meeting" },
-  ]"/images/action-2025-7.jpg", caption: isFr ? "Réunion de coordination" : "Coordination meeting" },
   ]
 
   return (
@@ -66,9 +40,7 @@ export function Reports() {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="text-emerald-600 font-semibold uppercase tracking-wide text-sm">
-            {r.sectionLabel}
-          </span>
+          <span className="text-emerald-600 font-semibold uppercase tracking-wide text-sm">{r.sectionLabel}</span>
           <h1 className="text-4xl font-bold text-gray-900 mt-2 mb-4">{r.title}</h1>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">{r.subtitle}</p>
         </div>
@@ -201,12 +173,7 @@ export function Reports() {
             {photos.map((photo, i) => (
               <div key={i} className="rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
                 <div className="relative h-48 w-full">
-                  <Image
-                    src={photo.src}
-                    alt={photo.caption}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <Image src={photo.src} alt={photo.caption} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
                 <div className="bg-white px-3 py-2">
                   <p className="text-xs text-gray-600">{photo.caption}</p>
