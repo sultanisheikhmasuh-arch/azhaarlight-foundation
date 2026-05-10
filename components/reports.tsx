@@ -1,7 +1,6 @@
 "use client"
 import { useLanguage } from "@/lib/language-context"
 import { FileText, BarChart3, Camera, TrendingUp, Shield, Heart, BookOpen, Stethoscope, Home, CheckCircle } from "lucide-react"
-import Image from "next/image"
 
 export function Reports() {
   const { t, locale } = useLanguage()
@@ -22,16 +21,6 @@ export function Reports() {
     isFr ? "Aucun salaire prélevé sur les dons en 2025" : "No salary deducted from donations in 2025",
     isFr ? "Traçabilité complète de chaque don reçu" : "Complete traceability of every donation received",
     isFr ? "Audit interne semestriel de l'utilisation des fonds" : "Semi-annual internal audit of fund utilization",
-  ]
-
-  const photos = [
-    { src: "/images/action-2025-1.jpg", caption: isFr ? "Travaux communautaires sur le terrain" : "Community work in the field" },
-    { src: "/images/action-2025-2.jpg", caption: isFr ? "Notre équipe de bénévoles" : "Our volunteer team" },
-    { src: "/images/action-2025-3.jpg", caption: isFr ? "Rassemblement communautaire" : "Community gathering" },
-    { src: "/images/action-2025-4.jpg", caption: isFr ? "Session de formation" : "Training session" },
-    { src: "/images/action-2025-5.jpg", caption: isFr ? "Réunion officielle avec partenaires" : "Official meeting with partners" },
-    { src: "/images/action-2025-6.jpg", caption: isFr ? "Remise d'accréditations" : "Credential distribution" },
-    { src: "/images/action-2025-7.jpg", caption: isFr ? "Réunion de coordination" : "Coordination meeting" },
   ]
 
   return (
@@ -153,27 +142,6 @@ export function Reports() {
                 {isFr ? "Télécharger (EN)" : "Download (EN)"}
               </a>
             </div>
-          </div>
-        </div>
-
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            {isFr ? "Photos de terrain — 2025" : "Field photos — 2025"}
-          </h2>
-          <p className="text-gray-500 text-sm mb-6">
-            {isFr ? "Nos actions en images." : "Our actions in pictures."}
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {photos.map((photo, i) => (
-              <div key={i} className="rounded-xl overflow-hidden shadow-sm border border-gray-100 group">
-                <div className="relative h-48 w-full">
-                  <Image src={photo.src} alt={photo.caption} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
-                </div>
-                <div className="bg-white px-3 py-2">
-                  <p className="text-xs text-gray-600">{photo.caption}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
