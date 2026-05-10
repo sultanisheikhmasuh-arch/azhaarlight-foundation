@@ -67,7 +67,7 @@ export function Hero() {
       {/* Hero Photo */}
       <div className="relative w-full h-72 md:h-96 overflow-hidden">
         <Image
-          src="/images/hero-photo.jpg"
+          src="/images/hero-photo.jpg.jpg"
           alt="AzhaarLight Foundation - Education"
           fill
           className="object-cover object-center"
