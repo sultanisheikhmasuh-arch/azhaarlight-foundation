@@ -24,12 +24,12 @@ export function Reports() {
     isFr ? "Audit interne semestriel de l'utilisation des fonds" : "Semi-annual internal audit of fund utilization",
   ]
 
-  const photos = [
+  ficielle avec partenaires" : "Official meeting const photos = [
     { src: "/action-2025-1.jpg", caption: isFr ? "Travaux communautaires sur le terrain" : "Community work in the field" },
     { src: "/action-2025-2.jpg", caption: isFr ? "Notre équipe de bénévoles" : "Our volunteer team" },
     { src: "/action-2025-3.jpg", caption: isFr ? "Rassemblement communautaire" : "Community gathering" },
     { src: "/action-2025-4.jpg", caption: isFr ? "Session de formation" : "Training session" },
-    { src: "/action-2025-5.jpg", caption: isFr ? "Réunion officielle avec partenaires" : "Official meeting with partners" },
+    { src: "/action-2025-5.jpg", caption: isFr ? "Réunion ofwith partners" },
     { src: "/action-2025-6.jpg", caption: isFr ? "Remise d'accréditations" : "Credential distribution" },
     { src: "/action-2025-7.jpg", caption: isFr ? "Réunion de coordination" : "Coordination meeting" },
   ]
