@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import type { ReactNode } from "react"
 import { LanguageProvider } from "@/lib/language-context"
 import { Playfair_Display, Inter } from "next/font/google"
+import WhatsAppBar from "@/components/WhatsAppBar"
 import "./globals.css"
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 })
-
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
@@ -83,6 +83,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className={inter.className}>
+        <WhatsAppBar />
         <LanguageProvider>
           {children}
         </LanguageProvider>
