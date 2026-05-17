@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import type { ReactNode } from "react"
 import { LanguageProvider } from "@/lib/language-context"
+import { HtmlLang } from "@/components/HtmlLang"
 import { Playfair_Display, Inter } from "next/font/google"
 import WhatsAppBar from "@/components/WhatsAppBar"
 import "./globals.css"
@@ -9,6 +10,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
 })
+
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
@@ -65,8 +67,15 @@ const GA_ID = "G-WGW7H4EXNY"
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+    <html
+      lang="fr"
+      className={`${inter.variable} ${playfair.variable}`}
+      translate="no"
+    >
       <head>
+        {/* Désactive la traduction automatique des navigateurs */}
+        <meta name="google" content="notranslate" />
+
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
@@ -85,6 +94,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className={inter.className}>
         <WhatsAppBar />
         <LanguageProvider>
+          {/* Met à jour html[lang] dynamiquement selon la langue choisie */}
+          <HtmlLang />
           {children}
         </LanguageProvider>
       </body>
