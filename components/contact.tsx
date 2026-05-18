@@ -21,21 +21,24 @@ export function Contact() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
 
-  // ✅ CORRECTION : envoi réel via l'API route
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
     setError("")
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("https://formspree.io/f/mjgzvdgk", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
       })
 
-      if (!res.ok) throw new Error("Erreur serveur")
-
+      if (!res.ok) throw new Error("Erreur")
       setSubmitted(true)
     } catch (err) {
       setError(
@@ -65,7 +68,6 @@ export function Contact() {
     <section id="contact" className="py-16 lg:py-24 bg-card">
       <div className="container mx-auto px-4 lg:px-8">
 
-        {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-12">
           <span className="text-primary font-semibold uppercase tracking-widest text-sm mb-3 block">
             {t.contact.sectionLabel}
@@ -79,12 +81,10 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
 
-          {/* Contact Form */}
           <div className="bg-background rounded-2xl p-8 border border-border shadow-sm">
             <h3 className="font-serif text-xl font-bold text-foreground mb-2">💬 {t.contact.formTitle}</h3>
             <p className="text-sm text-muted-foreground mb-6">{t.contact.formDesc}</p>
 
-            {/* Reasons */}
             <div className="mb-6">
               <p className="text-sm font-medium text-foreground mb-2">{t.contact.reasonsTitle}</p>
               <ul className="space-y-1">
@@ -125,17 +125,11 @@ export function Contact() {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })} required className="bg-card resize-none" />
                 </div>
 
-                {/* ✅ Message d'erreur */}
                 {error && (
                   <p className="text-sm text-red-500 text-center">{error}</p>
                 )}
 
-                <Button
-                  type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                  size="lg"
-                  disabled={loading}
-                >
+                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg" disabled={loading}>
                   {loading ? (isFr ? "Envoi en cours..." : "Sending...") : t.contact.formSubmit}
                 </Button>
                 <p className="text-xs text-muted-foreground text-center">{t.contact.responseTime}</p>
@@ -143,10 +137,8 @@ export function Contact() {
             )}
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-6">
 
-            {/* Address */}
             <div className="bg-background rounded-2xl p-6 border border-border">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
@@ -159,7 +151,6 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Phone */}
             <div className="bg-background rounded-2xl p-6 border border-border">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
@@ -189,7 +180,6 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Email */}
             <div className="bg-background rounded-2xl p-6 border border-border">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
@@ -204,7 +194,6 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Social Media */}
             <div className="bg-background rounded-2xl p-6 border border-border">
               <h3 className="font-semibold text-foreground mb-4">🌐 {t.contact.followUs}</h3>
               <div className="flex gap-3 flex-wrap">
