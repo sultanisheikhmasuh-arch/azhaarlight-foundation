@@ -18,10 +18,34 @@ export function Contact() {
   const isFr = locale === "fr"
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // ✅ CORRECTION : envoi réel via l'API route
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError("")
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) throw new Error("Erreur serveur")
+
+      setSubmitted(true)
+    } catch (err) {
+      setError(
+        isFr
+          ? "Une erreur est survenue. Veuillez réessayer ou nous contacter par email."
+          : "An error occurred. Please try again or contact us by email."
+      )
+    } finally {
+      setLoading(false)
+    }
   }
 
   const reasons = [
@@ -100,8 +124,19 @@ export function Contact() {
                   <Textarea placeholder={t.contact.formMessage} rows={4} value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })} required className="bg-card resize-none" />
                 </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
-                  {t.contact.formSubmit}
+
+                {/* ✅ Message d'erreur */}
+                {error && (
+                  <p className="text-sm text-red-500 text-center">{error}</p>
+                )}
+
+                <Button
+                  type="submit"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  size="lg"
+                  disabled={loading}
+                >
+                  {loading ? (isFr ? "Envoi en cours..." : "Sending...") : t.contact.formSubmit}
                 </Button>
                 <p className="text-xs text-muted-foreground text-center">{t.contact.responseTime}</p>
               </form>
@@ -132,8 +167,6 @@ export function Contact() {
                 </div>
                 <div className="space-y-3">
                   <h3 className="font-semibold text-foreground">📞 {t.contact.phoneLabel}</h3>
-
-                  {/* Numéro Belgique */}
                   <div>
                     <p className="text-xs text-muted-foreground font-medium mb-1">
                       🇧🇪 {isFr ? "Belgique (Europe)" : "Belgium (Europe)"}
@@ -143,8 +176,6 @@ export function Contact() {
                     </a>
                     <p className="text-xs text-muted-foreground mt-1">WhatsApp {t.contact.available}</p>
                   </div>
-
-                  {/* Numéro Burundi */}
                   <div>
                     <p className="text-xs text-muted-foreground font-medium mb-1">
                       🇧🇮 {isFr ? "Burundi (Afrique de l'Est)" : "Burundi (East Africa)"}
