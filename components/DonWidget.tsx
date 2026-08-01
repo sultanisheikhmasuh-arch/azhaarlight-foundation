@@ -149,7 +149,7 @@ export default function DonWidget() {
           <div>🌍 Pays : <strong>Belgique</strong> — Ville : <strong>Bruxelles</strong></div>
           <div style={{ marginTop: "6px", opacity: 0.75, fontSize: "12px" }}>
             Après le transfert, envoyez votre reçu à :<br />
-            <strong>azhaarlight@outlook.com</strong> ou WhatsApp 🇧🇪 +32 470 90 46 20
+            <strong>azhaarlight@outlook.com</strong> ou WhatsApp 🇧🇮 +257 67 91 43 87
           </div>
         </div>
       )}
