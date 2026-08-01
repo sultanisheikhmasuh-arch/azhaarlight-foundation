@@ -71,10 +71,6 @@ export function Don() {
               <span className="font-medium text-gray-900">azhaarlight@outlook.com</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-gray-500">WhatsApp 🇧🇪</span>
-              <span className="font-medium text-gray-900">+32 470 90 46 20</span>
-            </div>
-            <div className="flex justify-between">
               <span className="text-gray-500">WhatsApp 🇧🇮</span>
               <span className="font-medium text-gray-900">+257 67 91 43 87</span>
             </div>
