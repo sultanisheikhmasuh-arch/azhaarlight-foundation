@@ -28,7 +28,7 @@ export function Footer() {
   ]
 
   const socialLinks = [
-    { icon: <Facebook size={18} />, href: "https://www.facebook.com/profile.php?id=61589285276789", label: "Facebook" },
+    { icon: <Facebook size={18} />, href: "https://www.facebook.com/1025376490668882", label: "Facebook" },
     { icon: <Instagram size={18} />, href: "https://www.instagram.com/azhaarlight", label: "Instagram" },
     { icon: <TikTokIcon />, href: "https://www.tiktok.com/@azhaarlight", label: "TikTok" },
     { icon: <Youtube size={18} />, href: "https://www.youtube.com/channel/UCAPxLUnCa_eQYAusD8i49jw", label: "YouTube" },
