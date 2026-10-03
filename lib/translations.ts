@@ -271,7 +271,7 @@ export const translations = {
       spread3: "Organisez une collecte de fonds dans votre communauté",
       spread4: "Invitez-nous à présenter notre mission",
       zakatTitle: "Zakat et Sadaqah",
-      zakatDesc: "AzhaarLight Foundation est éligible pour recevoir votre Zakat et vos Sadaqah. Nous redistribuons 100% de ces dons aux personnes vulnérables éligibles selon les principes islamiques, avec une transparence totale.",
+      zakatDesc: "AzhaarLight Foundation est éligible pour recevoir votre Zakat et vos Sadaqah. Nous utilisons 95% de ces dons directement pour les personnes vulnérables éligibles selon les principes islamiques (5% de frais opérationnels), avec une transparence totale.",
     },
     contact: {
       sectionLabel: "Contact",
@@ -692,7 +692,7 @@ export const translations = {
       spread3: "Organize a fundraiser in your community",
       spread4: "Invite us to present our mission",
       zakatTitle: "Zakat and Sadaqah",
-      zakatDesc: "AzhaarLight Foundation is eligible to receive your Zakat and Sadaqah. We redistribute 100% of these donations to eligible vulnerable people according to Islamic principles, with complete transparency.",
+      zakatDesc: "AzhaarLight Foundation is eligible to receive your Zakat and Sadaqah. We use 95% of these donations directly for eligible vulnerable people according to Islamic principles (5% operational costs), with complete transparency.",
     },
     contact: {
       sectionLabel: "Contact",
