@@ -1,6 +1,6 @@
 "use client"
 import { useLanguage } from "@/lib/language-context"
-import { FileText, BarChart3, Camera, TrendingUp, Shield, Heart, BookOpen, Stethoscope, Home, CheckCircle } from "lucide-react"
+import { FileText, BarChart3, Camera, TrendingUp, Shield, Heart, BookOpen, Stethoscope, Zap, CheckCircle } from "lucide-react"
 
 export function Reports() {
   const { t, locale } = useLanguage()
@@ -11,12 +11,12 @@ export function Reports() {
     { category: isFr ? "Aide alimentaire & nutrition" : "Food aid & nutrition", percentage: 35, color: "bg-emerald-500", icon: <Heart className="w-4 h-4" /> },
     { category: isFr ? "Éducation & bourses" : "Education & scholarships", percentage: 25, color: "bg-blue-500", icon: <BookOpen className="w-4 h-4" /> },
     { category: isFr ? "Santé & soins médicaux" : "Health & medical care", percentage: 20, color: "bg-purple-500", icon: <Stethoscope className="w-4 h-4" /> },
-    { category: isFr ? "Logement & urgences" : "Housing & emergencies", percentage: 15, color: "bg-orange-500", icon: <Home className="w-4 h-4" /> },
+    { category: isFr ? "Énergie (électricité, mosquée de Kigoma)" : "Energy (electricity, Kigoma mosque)", percentage: 15, color: "bg-orange-500", icon: <Zap className="w-4 h-4" /> },
     { category: isFr ? "Frais opérationnels" : "Operational costs", percentage: 5, color: "bg-gray-400", icon: <Shield className="w-4 h-4" /> },
   ]
 
   const commitments = [
-    isFr ? "100% des dons Zakat et Sadaqah redistribués aux bénéficiaires" : "100% of Zakat and Sadaqah donations redistributed to beneficiaries",
+    isFr ? "95% des dons utilisés directement pour les bénéficiaires (5% de frais opérationnels)" : "95% of donations used directly for beneficiaries (5% operational costs)",
     isFr ? "Rapport annuel publié chaque année" : "Annual report published every year",
     isFr ? "Aucun salaire prélevé sur les dons en 2025" : "No salary deducted from donations in 2025",
     isFr ? "Traçabilité complète de chaque don reçu" : "Complete traceability of every donation received",

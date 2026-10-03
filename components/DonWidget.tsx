@@ -178,7 +178,7 @@ export default function DonWidget() {
       </button>
 
       <p style={{ fontSize: "11px", opacity: 0.55, textAlign: "center", marginTop: "10px", marginBottom: 0 }}>
-        🔒 Paiement sécurisé · 100% pour les bénéficiaires
+        🔒 Paiement sécurisé · 95% pour les bénéficiaires
       </p>
     </section>
   );
