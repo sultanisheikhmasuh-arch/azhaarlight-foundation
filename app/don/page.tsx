@@ -163,7 +163,7 @@ function DonPageContent() {
               <button onClick={copyEmail} style={{ marginLeft: "8px", fontSize: "11px", padding: "2px 8px", borderRadius: "4px", border: "1px solid #d1d5db", cursor: "pointer", background: "#f9fafb" }}>
                 {copied ? "Copié ✓" : "Copier"}
               </button>
-              <br />ou WhatsApp 🇧🇪 <a href="https://wa.me/32470904620" style={{ color: "#25D366", fontWeight: 500 }}>+32 470 90 46 20</a>
+              <br />ou WhatsApp 🇧🇮 <a href="https://wa.me/25767914387" style={{ color: "#25D366", fontWeight: 500 }}>+257 67 91 43 87</a>
             </div>
             <button
               style={{ ...s.cta, background: "#c8102e" }}
@@ -190,7 +190,7 @@ function DonPageContent() {
               <button onClick={copyEmail} style={{ marginLeft: "8px", fontSize: "11px", padding: "2px 8px", borderRadius: "4px", border: "1px solid #d1d5db", cursor: "pointer", background: "#f9fafb" }}>
                 {copied ? "Copié ✓" : "Copier"}
               </button>
-              <br />ou WhatsApp 🇧🇪 <a href="https://wa.me/32470904620" style={{ color: "#25D366", fontWeight: 500 }}>+32 470 90 46 20</a>
+              <br />ou WhatsApp 🇧🇮 <a href="https://wa.me/25767914387" style={{ color: "#25D366", fontWeight: 500 }}>+257 67 91 43 87</a>
             </div>
             <button
               style={{ ...s.cta, background: "#FFDD00", color: "#000" }}
@@ -235,8 +235,6 @@ function DonPageContent() {
       {/* Contact */}
       <div style={{ textAlign: "center", fontSize: "13px", color: "#6b7280", marginTop: "1rem" }}>
         Une question ?{" "}
-        <a href="https://wa.me/32470904620" style={{ color: "#25D366", fontWeight: 500 }}>WhatsApp 🇧🇪</a>{" "}
-        ou{" "}
         <a href="https://wa.me/25767914387" style={{ color: "#25D366", fontWeight: 500 }}>WhatsApp 🇧🇮</a>
       </div>
     </div>
