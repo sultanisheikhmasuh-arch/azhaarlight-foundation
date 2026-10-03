@@ -57,7 +57,7 @@ export default function ReunionResume() {
 
       {/* Footer */}
       <div style={{ background: "#1F4E79", borderRadius: 12, padding: "1.1rem 1.5rem", display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: 8 }}>
-        <span style={{ fontSize: 13, color: "#B5D4F4" }}>azhaarlight@outlook.com · +32 470 90 46 20</span>
+        <span style={{ fontSize: 13, color: "#B5D4F4" }}>azhaarlight@outlook.com · +257 67 91 43 87</span>
         <a href="https://azhaarlight-foundation-one.vercel.app" style={{ fontSize: 13, color: "#C9A84C", textDecoration: "none" }}>
           azhaarlight-foundation-one.vercel.app ↗
         </a>
