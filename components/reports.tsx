@@ -146,6 +146,48 @@ export function Reports() {
         </div>
 
         <div className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">{r.schoolTitle}</h2>
+          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="bg-emerald-100 p-3 rounded-lg">
+                <BookOpen className="text-emerald-600 w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900">{r.schoolReportTitle}</h3>
+                <p className="text-gray-500 text-sm">{r.schoolReportDesc}</p>
+              </div>
+              <span className="ml-auto bg-emerald-100 text-emerald-700 text-sm font-medium px-4 py-2 rounded-full">
+                {r.schoolBadge}
+              </span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="border border-gray-200 rounded-xl overflow-hidden">
+                <div className="bg-gray-50 px-4 py-2 border-b border-gray-200 flex items-center gap-2">
+                  <span>🇫🇷</span>
+                  <span className="text-sm font-medium text-gray-700">{isFr ? "Version Française" : "French Version"}</span>
+                </div>
+                <iframe src="/rapport-rentree-2026-2027-fr.pdf#toolbar=0&navpanes=0" className="w-full h-64" title="Rapport rentrée 2026-2027 FR" />
+              </div>
+              <div className="border border-gray-200 rounded-xl overflow-hidden">
+                <div className="bg-gray-50 px-4 py-2 border-b border-gray-200 flex items-center gap-2">
+                  <span>🇬🇧</span>
+                  <span className="text-sm font-medium text-gray-700">{isFr ? "Version Anglaise" : "English Version"}</span>
+                </div>
+                <iframe src="/rapport-rentree-2026-2027-en.pdf#toolbar=0&navpanes=0" className="w-full h-64" title="School year 2026-2027 report EN" />
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a href="/rapport-rentree-2026-2027-fr.pdf" download className="flex-1 flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+                {isFr ? "Télécharger (FR)" : "Download (FR)"}
+              </a>
+              <a href="/rapport-rentree-2026-2027-en.pdf" download className="flex-1 flex items-center justify-center gap-2 border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+                {isFr ? "Télécharger (EN)" : "Download (EN)"}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">{r.typesTitle}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
